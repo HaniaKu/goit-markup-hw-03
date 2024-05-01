@@ -88,7 +88,7 @@ body{
     justify-content: space-between;
     align-items: center;
     column-gap: 40px;
-    padding: 24px 0px;
+    padding: 24px 0;
 }
 
 .logo {
@@ -97,6 +97,7 @@ body{
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-right: 76px;
     text-transform: uppercase;
     color: var(--iris);
 }
@@ -111,8 +112,8 @@ body{
 
 .header-menu {
     display: flex;
-    column-gap: 40px;
-    padding-top: 24px 0px;
+    padding: 24px 0;
+    gap: 40px;
 }
 
 .header-link{
@@ -151,6 +152,7 @@ body{
             
 
 .hero-title {
+    display: block;
     max-width: 496px;
     font-weight: 700;
     font-size: 56px;
@@ -197,10 +199,12 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.advantages{
+    padding: 120px 0;
+}
 .advantages-menu {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .advantages-title {
@@ -210,6 +214,9 @@ body{
     margin-bottom: 8px;
     color: var(--navy-blue);
 }
+.advantages-item{
+    width: ((100% - 72px) / 4);
+}
 
 .advantages-text {
     font-weight: 400;
@@ -218,6 +225,7 @@ body{
  /*===== OUR TEAMS STYLES =====*/
 
  .teams {
+    padding: 120px 0;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -225,7 +233,7 @@ body{
 
 .teams-menu{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 .teams-title {
     font-weight: 700;
@@ -237,8 +245,9 @@ body{
     color: var(--navy-blue);
 }
 
-.teams-img{
-    margin-bottom: 32px;
+.card-teams{
+    border-radius: 0px 0px 4px 4px;
+    padding: 32px 0;
 }
 
 .teams-subtitle {
@@ -258,6 +267,8 @@ body{
  /*===== PORTFOLIO STYLES =====*/
  
  .portfolio {
+    padding-top: 120px; 
+    padding-bottom: 120px;
     background-color: var(--cloud);
 }
 
@@ -281,6 +292,10 @@ body{
 
 .portfolio-item {
     width: calc((100% - 48px) / 3);
+   
+}
+
+.container-portfolio{
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
     border-top: none;
@@ -309,10 +324,13 @@ body{
     background-color: var(--navy-blue);
 }
 
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .footer-text{
     max-width: 264px;
     font-weight: 400;
-    margin-top: 16px;
     word-wrap: break-word;
     color: var(--cloud);
 }
