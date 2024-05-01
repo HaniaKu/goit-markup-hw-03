@@ -1,78 +1,141 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    background-color: #ffffff;
-    color: #434455;
-   
+/* ===== COMMON STYLES ===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
-ul,ol{
+
+ul,
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
 }
+
 a{
+    color: inherit;
     text-decoration: none;
 }
 
-    /**================HEADER========================*/
+button{
+    cursor: pointer;
+}
+
+img{
+    display: block;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: 0.02em;
+    background-color:var(--white);
+    color: var(--slate);
+}
+
+.container{
+    max-width: 1158px;
+    padding: 0px 15px;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+/* ===== COLOR STYLES ===== */
+
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+}
+
+/* ===== HEADER STYLES ===== */
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.page-header{
+    border-bottom: 1px solid var(--cornflower);
+    width: 1440px;
+    background: var(--white);
+}
 
 .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    padding: 24px 0px;
 }
+
 .logo {
     font-family: 'Raleway', sans-serif;
-    color: #4D5AE5;
+    color: var(--iris);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.logo-dark{
-    color: #2E2F42;
-}
-.logo-leight{
-    color: #F4F4FD;
-}
-.header-menu {
-    
-}
-.header-link{
-    color: #2E2F42;
-}
-.header-link:hover,
-.header-link:focus{
-    color: #404BBF;
-}
-.address {
-    font-style: normal;
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-    word-wrap: break-word;  
-}
-.address-menu {
-    font-size: 16px;
-    color: #434455;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.address-link{
-    font-size: 16px;
-    color: inherit;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+
+.logo-dark {
+    color: var(--navy-blue);
 }
 
+.logo-leight {
+    color: var(--cloud);
+}
+
+.header-menu {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 24px 0px;
+}
+
+.header-link{
+    font-weight: 500;
+    color: var(--navy-blue);
+}
+
+
+.header-link:hover,
+.header-link:focus{
+    color: var(--ocean);
+}
+
+.address {
+    word-wrap: break-word;   
+}
+.address-menu {
+    display: flex;
+    font-weight: 400;
+    column-gap: 40px;
+    padding: 24px 0px;
+    color: var(--slate);
+ 
+}
 .address-link:hover,
 .address-link:focus{
-    color: #404BBF;
+    color: var(--ocean);
 }
-.address-menu-tel {
-}
-/**==============================================*/
  /**================HERO========================*/
 .hero {
     color: #ffffff;
@@ -98,7 +161,6 @@ a{
     background-color: #404BBF;
 }
 
-/**==============================================*/
  /**================ADVANTAGES==================*/
 .advantages {
 }
