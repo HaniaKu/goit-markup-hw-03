@@ -133,7 +133,7 @@ body{
 .address-menu {
     display: flex;
     font-weight: 400;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .address-menu-li{
@@ -228,7 +228,7 @@ body{
  /*===== OUR TEAMS STYLES =====*/
 
 .teams {
-    padding: 120px 0 120px;
+    padding: 120px 0;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
