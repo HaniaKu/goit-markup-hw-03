@@ -87,7 +87,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+    gap: 40px;
     padding: 24px 0;
 }
 
@@ -134,7 +134,10 @@ body{
     display: flex;
     font-weight: 400;
     column-gap: 40px;
-    padding: 24px 0px;
+}
+
+.address-menu-li{
+    padding: 24px 0;
 }
 
 .address-link:hover,
@@ -224,8 +227,8 @@ body{
 
  /*===== OUR TEAMS STYLES =====*/
 
- .teams {
-    padding: 120px 0;
+.teams {
+    padding: 120px 0 120px;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
